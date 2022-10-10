@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display table에 대하여</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        #wrap{}
+        .container{display: table; table-layout: fixed; width: 100vh;}
+        .box{display: table-cell; text-align: center;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="box">
+                <picture>
+                    <source srcset="https://picsum.photos/50/300?random=1.jpg" media="(min-width:1200px)" />
+                    <source srcset="https://picsum.photos/100/300?random=2.jpg" media="(min-width:800px)" />
+                    <source srcset="https://picsum.photos/200/300?random=3.jpg" media="(min-width:480px)" />
+                    <img src="https://picsum.photos/200/300?random=1" alt="picture태그용 이미지">
+                </picture>
+                <h2 class="title_s">제목</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem nisi optio quas dignissimos ut ad. Eius dolores harum, minima totam dolore molestias, reprehenderit corporis sapiente, quod nisi atque recusandae.</p>
+            </div>
+            <div class="box">
+                <picture>
+                    <source srcset="https://picsum.photos/50/300?random=1.jpg" media="(min-width:1200px)" />
+                    <source srcset="https://picsum.photos/100/300?random=2.jpg" media="(min-width:800px)" />
+                    <source srcset="https://picsum.photos/200/300?random=3.jpg" media="(min-width:480px)" />
+                    <img src="https://picsum.photos/200/300?random=1" alt="picture태그용 이미지">
+                </picture>
+                <h2 class="title_s">제목</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem nisi optio quas dignissimos ut ad. Eius dolores harum, minima totam dolore molestias, reprehenderit corporis sapiente, quod nisi atque recusandae.</p>
+            </div>
+            <div class="box">
+                <picture>
+                    <source srcset="https://picsum.photos/50/300?random=1.jpg" media="(min-width:1200px)" />
+                    <source srcset="https://picsum.photos/100/300?random=2.jpg" media="(min-width:800px)" />
+                    <source srcset="https://picsum.photos/200/300?random=3.jpg" media="(min-width:480px)" />
+                    <img src="https://picsum.photos/200/300?random=1" alt="picture태그용 이미지">
+                </picture>
+                <h2 class="title_s">제목</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem nisi optio quas dignissimos ut ad. Eius dolores harum, minima totam dolore molestias, reprehenderit corporis sapiente, quod nisi atque recusandae.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
