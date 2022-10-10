@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 스크롤다운 아이콘</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            height: 100vh;
+        }
+
+        div:nth-of-type(2n) {
+            background-color: lightpink;
+        }
+
+        div.scroll-down {
+            z-index: 1;
+            position: fixed;
+            left: 50%;
+            bottom: 82px;
+            transform: translate(-50%, -50%);
+            width: 42px;
+            height: 64px;
+            border: 2px solid black;
+            border-radius: 50px;
+        }
+
+        div.scroll-down::before,
+        div.scroll-down::after {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            border: 2px solid black;
+            width: 10px;
+            height: 10px;
+            border-left: transparent;
+            border-top: transparent;
+            animation: scrollDown 1.2s ease-out infinite;
+        }
+
+        div.scroll-down::after {
+            top: 30%;
+            animation-delay: .4s;
+        }
+
+        @keyframes scrollDown {
+            from {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+                top: 78%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="scroll-down"></div>
+</body>
+</html>
